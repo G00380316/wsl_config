@@ -44,6 +44,7 @@ zsh_pkg=(
 
 zsh_pkg2=(
     fzf
+    fd
     fastfetch
     neovim
     unzip
@@ -140,7 +141,7 @@ fi
 # Fonts, directories, and utilities
 # -----------------------------
 dircolors -p > "$HOME/.dircolors"
-mkdir -p "$HOME/Store/Projects" "$HOME/.cache/hyde/wallpapers"
+mkdir -p "$HOME/Github/Projects"
 
 # JetBrains Mono Nerd Font installation
 if ! fc-list | grep -i "JetBrainsMono Nerd Font" &>/dev/null; then

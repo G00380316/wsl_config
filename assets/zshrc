@@ -89,20 +89,13 @@ alias qa='exit'
 alias e='exec zsh'
 alias rs='reboot'
 alias ss='shutdown -h now'
-alias vp='zathura'
-alias vi='feh'
-alias yt='yt-dlp'
 alias calc='bc'
 alias n='nvim'
 alias ni='nvim $(fzf --preview="bat --color=always {}")'
-alias t='tmux'
-alias tl='tmux attach-session -t "$(tmux ls | tail -n1 | cut -d: -f1)"'
 alias lg='lazygit'
 alias doc="$HOME/.config/scripts/cht.sh"
 alias i="$HOME/.config/scripts/cht.sh"
-alias search='rg'
 alias sideloader='sideloader-cli-x86_64-linux-gnu'
-alias blueman='rofi-bluetooth'
 
 # Archive utils
 alias urar='unrar x'
