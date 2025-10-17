@@ -62,6 +62,7 @@ bindkey -e
 # FZF-tab Completion Styles
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:*' fzf-preview '[[ -d $realpath ]] && ls --color $realpath || bat --style=numbers --color=always --line-range :100 $realpath 2>/dev/null || cat $realpath 2>/dev/null'
 
 # Terminal Styling
 # cat .nf 2> /dev/null
